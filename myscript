@@ -1,0 +1,50 @@
+#bubble tea
+#the cup
+torus
+250 250 0 10 100
+#straw
+box
+240 280 10 10 230 10
+box
+150 250 50 200 200 100
+#bubbles
+sphere
+225 60 0 8
+sphere
+195 60 0 8
+sphere
+165 60 0 8
+sphere
+265 60 0 8
+sphere
+295 60 0 8
+sphere
+325 60 0 8
+sphere
+210 85 0 8
+sphere
+180 85 0 8
+sphere
+280 85 0 8
+sphere
+310 85 0 8
+ident
+rotate
+z 20
+rotate
+y 20
+apply
+display
+#
+#
+#
+#
+#
+#kermit the frog
+ident
+rotate
+z 20
+rotate
+y 20
+apply
+display
