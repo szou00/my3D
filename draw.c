@@ -87,13 +87,9 @@ void add_sphere( struct matrix * edges, double cx, double cy, double cz, double 
            Returns a matrix of those points
   ====================*/
 struct matrix * generate_sphere(double cx, double cy, double cz, double r, int step ) {
-  struct matrix * sphere_points = new_matrix(4,step+1);
-  double x = 0;
-  double y = 0;
-  double z = 0;
-  double rot = 0;
-  double cir = 0;
-  double step_d = 0;
+  struct matrix * sphere_points = new_matrix(4,10);
+  double x = 0; double y = 0; double z = 0;
+  double rot = 0; double cir = 0; double step_d = 0;
   step_d = 1.0/step;
   // printf("step: %d\n", step);
   // printf("step: %lf\n", step_d);
@@ -154,12 +150,10 @@ void add_torus( struct matrix * edges, double cx, double cy, double cz, double r
            Returns a matrix of those points
   ====================*/
 struct matrix * generate_torus( double cx, double cy, double cz, double r1, double r2, int step ) {
-  struct matrix * torus_points = new_matrix(10,10);
+  struct matrix * torus_points = new_matrix(4, 10);
   double x = 0; double y = 0; double z = 0;
   double rot = 0; double cir = 0; double step_d = 0;
-  step_d = (double)1/step;
-  // printf("step: %d\n", step);
-  // printf("step: %lf\n", step_d);
+  step_d = 1.0/step;
   while (rot <= 2 ) {
     cir = 0;
     while (cir <= 2) {

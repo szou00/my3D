@@ -173,6 +173,10 @@ void parse_file ( char * filename,
           add_torus(edges, xvals[0], yvals[0], zvals[0],r,r2,step);
         }//end sphere
 
+        else if (strncmp(line, "clear", strlen(line)) == 0) {
+          edges = new_matrix(4,4);
+        }
+
         else if ( strncmp(line, "line", strlen(line)) == 0 ) {
           fgets(line, sizeof(line), f);
           //printf("LINE\t%s", line);
